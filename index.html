@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>app</title>
+    </head>
+    <body>
+        <h1>MODEL DEPLOYING</h1>
+        <form action="/predict" method="post">
+            EnterExperience<input type="text" name="exp"><br><br>
+            <button class='btn btn-success'>Predict</button>
+        </form>
+    <div class="row">
+        {% if prediction %}
+        <h2>the salary predict is : {{prediction}}</h2>
+        {% endif %}
+        
+    </div>
+        </body>
+</html>
